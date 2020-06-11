@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  debugger-docker:
+    container_name: debugger-docker
+    # image: node:10.20.1
+    build: ./ # you can use image or docker file to build
+    command: bash -c "rm -rf node_modules && npm i && npm start"
+    working_dir: /usr/src/app
+    ports: 
+      - "4000:4000"
+      - "9230:9229"
+    volumes:
+      - ./:/usr/src/app
+    # environment:
