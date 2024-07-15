@@ -16,7 +16,7 @@ flowchart LR
 
     svc1-->SQS
     SQS-->lambda
-    lambda-->S3 buket
+    lambda-->"S3buket"
     
 
 
