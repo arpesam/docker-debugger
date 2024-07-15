@@ -14,9 +14,9 @@ You can send a `GET` request to `http://localhots:4000`
 ```mermaid
 flowchart LR
 
-    svc1 --> SQS
-    SQS --> lambda
-    lambda --> S3 buket
+    svc1-->SQS
+    SQS-->lambda
+    lambda-->S3 buket
     
 
 
